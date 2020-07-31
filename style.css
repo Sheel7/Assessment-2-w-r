@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background: #474747;
+}
+
+/*----------------------------------------------------*/
+.chat-area {
+  position:absolute;
+  height:480px;
+  overflow-y:scroll;
+  padding:30px 20px 30px 20px;
+  width:100%;
+  
+  background-color:#000;
+}
+.received{
+  word-break:break-all;
+  overflow:auto;
+  padding:10px;
+  width:70%;
+  /* float:left; */
+   background-color:#474747; 
+  border-radius:15px;
+  margin-bottom: 10px;
+}
+.sent {
+  word-break:break-all;
+  color:#fff;
+  margin-left:70%;
+  padding:5px;
+  width:200px;
+  overflow:auto;
+  background-color:#64B5F6;
+  border-radius:10%;
+}
+.client-text {
+  position:absolute;
+  width:100%;
+  top:555px;
+  height:5%;
+  background-color:#fff;
+  /* border-top:3px solid #eceff1; */
+}
+.submitbtn{
+  display: inline-block;
+  float: right;
+  height:40px;
+  width:91px;
+  color:#fff;
+  cursor:pointer;
+  border:none;
+  background: url("images/send.png") no-repeat center;
+}
+input[type="text"] {
+   font-size: 16px;
+  float: left;
+  width: 608px;
+  height: 40px;
+  padding: 0 10px;
+  color: #1a1a1a;
+  border: 0;
+  outline: none;
+  background-color: #eceff1;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+
+ 
+}
+/*-----------------------------------------------------------------------*/
+.wrapper {
+  position: relative;
+  left: 50%;
+  width: 1000px;
+  height: 800px;
+  transform: translate(-50%, 0);
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 75%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.container .left {
+  float: left;
+  width: 30%;
+  height: 100%;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+}
+.container .left .top {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 29px;
+  text-align:center;
+}
+.container .left .top .span {
+  padding:30px;
+  font-size: 17px !important;
+  color: #0974B0;
+  text-transform:uppercase;
+  font-weight:600;
+}
+.container .left .top:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 80%;
+  height: 1px;
+  content: '';
+  background-color: #fff;
+  transform: translate(-50%, 0);
+}
+.container .left input {
+  float: left;
+  width: 240px;
+  height: 42px;
+  padding: 0 30px;
+  border: 1px solid #e6e6e6;
+  background-color: #eceff1;
+  border-radius: 21px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.container .left .people{
+height:400px;
+overflow-y:scroll;
+}
+.container .left .people .person {
+  position: relative;
+  width: 100%;
+  
+  padding: 12px 10% 16px;
+  /*cursor: pointer;*/
+}
+.container .left .people .person:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 80%;
+  height: 1px;
+  content: '';
+  background-color: #e6e6e6;
+  transform: translate(-50%, 0);
+}
+
+.container .left .people .person .name {
+  font-size: 14px;
+  line-height: 22px;
+  color: #1a1a1a;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+.container .right {
+  position: relative;
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+.container .right .top {
+  width: 100%;
+  height: 70px;
+  padding: 15px 29px;
+  background-color: #0974B0;
+  border-top-right-radius: 5px;
+}
+.container .right .top span {
+  font-size: 17px;
+  font-weight:bold;
+  text-transform:uppercase;
+  color: #fff;
+}
+.container .right .top span .name {
+  color: #1a1a1a;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+.container .right .write input {
+  font-size: 16px;
+  float: left;
+  width: 347px;
+  height: 40px;
+  padding: 0 10px;
+  color: #1a1a1a;
+  border: 0;
+  outline: none;
+  background-color: #eceff1;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
